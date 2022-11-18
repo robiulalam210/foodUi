@@ -26,7 +26,7 @@ class DetailProdact extends StatelessWidget {
                     size: 30,
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                    width: MediaQuery.of(context).size.width * 0.01,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,13 +44,13 @@ class DetailProdact extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.2,
+                    width: MediaQuery.of(context).size.width * 0.1,
                   ),
                   Icon(
                     Icons.add_shopping_cart,
                     size: 30,
                   ),
-                  Image.asset("images/love.png"),
+                  // Image.asset("images/love.png",),
                 ],
               ),
               Align(
@@ -79,10 +79,10 @@ class DetailProdact extends StatelessWidget {
                   Text(
                     "${modelVertical.titel}",
                     style: GoogleFonts.heebo(
-                        fontSize: 24, fontWeight: FontWeight.w700),
+                        fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.2,
+                    width: MediaQuery.of(context).size.width * 0.1,
                   ),
                   Image.asset("images/ster.png"),
                 ],
@@ -133,7 +133,6 @@ class DetailProdact extends StatelessWidget {
               ),
               Row(
                 children: [
-
                   Expanded(
                     flex: 2,
                     child: Container(
@@ -145,13 +144,15 @@ class DetailProdact extends StatelessWidget {
                       decoration: BoxDecoration(
                           shape: BoxShape.circle, color: Colors.cyan),
                     ),
-                  ), SizedBox(
+                  ),
+                  SizedBox(
                     width: MediaQuery.of(context).size.width * 0.01,
                   ),
                   Text(
                     "2",
                     style: GoogleFonts.heebo(fontSize: 22),
-                  ), SizedBox(
+                  ),
+                  SizedBox(
                     width: MediaQuery.of(context).size.width * 0.01,
                   ),
                   Expanded(
@@ -166,12 +167,12 @@ class DetailProdact extends StatelessWidget {
                           shape: BoxShape.circle, color: Colors.cyan),
                     ),
                   ),
-
                   Expanded(
                     flex: 8,
                     child: InkWell(
-                      onTap: (){
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CardDetail()));
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CardDetail()));
                       },
                       child: Container(
                         width: double.infinity,
